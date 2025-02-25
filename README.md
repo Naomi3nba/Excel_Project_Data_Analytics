@@ -33,7 +33,7 @@ Advanced Excel functions: XLOOKUP, FILTER, MAPS.
 📂 [Check my work here](https://github.com/Naomi3nba/Excel_Project_Data_Analytics/tree/ab960b55677fced47bcfd62255042edad9811f89/10_Project%20final_1_Dashboard_Data%20Salary%20Calculator)
 
 
-# Project 1:📈 Skill Data Analysis
+# Project 2:📈 Skill Data Analysis
 
 ![analysis1](https://github.com/user-attachments/assets/7e882d4a-ff33-43d8-849c-c35a06b91497)
 
