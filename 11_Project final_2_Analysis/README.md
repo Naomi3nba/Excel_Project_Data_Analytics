@@ -1,5 +1,14 @@
 
-# Project 2 Analysis
+# Project 2  Skills Analysis in Data Jobs
+
+![analysis1](https://github.com/user-attachments/assets/37348c9e-9f93-46cf-851d-0ae8ed2c2c87)
+
+
+📁 Dashboard File:
+My final dashboard is in: [Skills Analysis in Data Jobs](https://github.com/Naomi3nba/Excel_Project_Data_Analytics/tree/d9fc5b430625762ccaf69aa72c18859615738c02/11_Project%20final_2_Analysis)
+
+
+
 
 ## Introduction
 
