@@ -1,4 +1,7 @@
-# 📊 Data Analytics Dashboard
+# Project 1: 📊 Data Analytics Dashboard
+
+![DASHBOARD](https://github.com/user-attachments/assets/1bcc3f93-7139-4cfd-b10f-ef09de2b33c9)
+
 
 ## 🔴 Define the Question: 
 
@@ -29,9 +32,10 @@ Advanced Excel functions: XLOOKUP, FILTER, MAPS.
 
 📂 [Check my work here](https://github.com/Naomi3nba/Excel_Project_Data_Analytics/tree/ab960b55677fced47bcfd62255042edad9811f89/10_Project%20final_1_Dashboard_Data%20Salary%20Calculator)
 
-![DASHBOARD](https://github.com/user-attachments/assets/aee71771-5fed-4aa5-b37c-c32f8cbaded6)
 
-# 📈 Data Analysis
+# Project 1:📈 Skill Data Analysis
+
+![analysis1](https://github.com/user-attachments/assets/7e882d4a-ff33-43d8-849c-c35a06b91497)
 
 ## 🔴 Define the Question: 
 
@@ -58,6 +62,3 @@ Advanced Excel functions: Power Query, Power Pivot, Pivot Tables, Pivot Charts, 
 ✔️ Country
 
 📂 [Check my work here](https://github.com/Naomi3nba/Excel_Project_Data_Analytics/tree/ab960b55677fced47bcfd62255042edad9811f89/11_Project%20final_2_Analysis)
-
-![analysis](https://github.com/user-attachments/assets/f332cfe9-5965-42e0-b52c-6abd5955b784)
-
