@@ -1,12 +1,19 @@
 # 📊 Data Analytics Dashboard
 
-**Questions to Analyze**
+## 🔴 Define the Question: 
 
-To understand the data science job market, I asked the following:
+Main Question:
 
-📌 **Are data analysts in demand, and what is the median data analyst salary by country?**
+**How can I make an informed decision about pursuing a career in the data field based on median salary, country, and job type?**
 
-**🔧 Tools Used**:  Advanced Excel functions like XLOOKUP, FILTER, MAPS.
+Secondary Questions:
+
+- What is the average salary for different data-related positions by country?
+- What are the most common job type (full-time, remote) for these roles?
+- Which platforms are most commonly used to find data-related jobs?
+- How many data-jobs postings were available in 2023 by country?
+
+## **🔧 Tools Used**:  Advanced Excel functions like XLOOKUP, FILTER, MAPS.
 
 This project is an interactive Dashboard on Excel that analyzes the demand in the Data Analytics and Data Science sector, using advanced Excel tools, it visualizes key insights such as:
 
@@ -18,11 +25,13 @@ This project is an interactive Dashboard on Excel that analyzes the demand in th
 
 # 📈 Data Analysis
 
-**Questions to Analyze**
+## 🔴 Define the Question: 
 
-To understand the data science job market, I asked the following:
+Main Question:
 
 Do more skills get you better pay?
+
+Secondary Questions:
 
 - What’s the salary for data jobs in different regions?
 
@@ -30,7 +39,7 @@ Do more skills get you better pay?
 
 - What’s the pay for the top 10 skills?
 
-**🔧 Tools Used**: 
+## **🔧 Tools Used**: 
 
 🔍 Power Query 
 
