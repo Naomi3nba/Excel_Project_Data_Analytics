@@ -12,17 +12,19 @@ My final dashboard is in: [Skills Analysis in Data Jobs](https://github.com/Naom
 
 Main Question:
 
-Do more skills get you better pay, if I pursuing a career in data jobs?
+1️⃣ What are the top skills of data professionals?
 
 Secondary Questions:
-  
-- What skill should learn to get better pay?
-  
-- What’s the median salary for data jobs in different regions, compared to The United States?
 
-- What are the top skills of data professionals?
+2️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
 
-- What’s the pay for the top 10 skills?
+3️⃣ What skill should learn to get better pay?
+
+4️⃣ What’s the pay for the top 10 skills?
+  
+5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
+
+
 
 ## 🖥️ Collect data:
 
@@ -38,9 +40,7 @@ The dataset used for this project contains real-world data science job informati
 🛠️ Skills
 
 
-## ➡️ Do more skills get you better pay, if I pursuing a career in data jobs?
-
-### 📈 Clean and Analysis data:
+### 🧹 Clean data:
 
 The data analysis process—starting with the very important step of data cleaning and data analize.
 
@@ -70,21 +70,79 @@ For this project, the different formulas and funtions mentioned in detail below 
 
 ![transform data skills](https://github.com/user-attachments/assets/b86ee8a8-d76e-49cc-b0e3-250aebdd02db)
 
+2. Funtion: Power Pivot
 
-2. Pivot Table and DAX    
+I created a data model by integrating the *data_jobs_all* and *data_jobs_skills* tables into one model.
 
-🔢 I created a PivotTable using the Data Model I created with Power Pivot.
+Since I had already cleaned the data using Power Query; Power Pivot created a relationship between these two tables.
 
-📊 I moved the job_title_short to the rows area and salary_year_avg into the values area.
+Data Model
 
-🧮 Then I added new measure to calculate the median salary per job in DAX.
+I created a relationship between my two tables using the job_id column.
 
-Formula: Median Salary
+![model1](https://github.com/user-attachments/assets/eaed3ede-1a68-4391-9f96-5115336b6421)
+
+![model1 1](https://github.com/user-attachments/assets/12489892-df54-4a95-beb0-1e7d8e8b9899)
+
+
+### 📈 Analysis data
+
+## 1️⃣ What are the top skills of data professionals?
+
+1. Pivot Table and DAX    
+
+📊 I moved the *job_skills* to the rows area and *skill likelihood (%)* into the values area.
+
+🧮 Then I added new measures in DAX.
+
+- Name: Skill Count Dax
+  
+  Formula: 
+```
+=COUNT(data_jobs_skills[jobs_skills])
 
 ```
-=MEDIAN(data_jobs_salary[salary_year_avg])
+- Name: Job Count
+
+  Formula:
+```
+=DISTINCTCOUNT(data_jobs_salary[job_id])
 
 ```
+- Name: skill likelihood (%)
+
+  Formula:
+
+```
+=DIVIDE([SKILL COUNT DAX],[JOB COUNT])
+```
+### 📊 Create Visualization:
+
+1. Chart
+
+- Bar Chart for visual comparison of skills.
+- Horizontal bar chart for visual comparison of the skills likelihood (%) of each data job. 
+- Sorted skills likelihood (%) by descending 
+- Added Slices: Title job and country. 
+
+    ![question 2 chart](https://github.com/user-attachments/assets/325b5986-99f7-4182-961c-14b0dfbc9a61)
+
+## 🟢 Conclusion
+
+Understanding prevalent skills in the industry not only helps professionals stay competitive but also guides training and educational programs to focus on the most impactful technologies
+
+
+
+
+---------
+2️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
+
+
+
+
+
+
+
 
 Formula: Skill per Job
 
