@@ -41,15 +41,17 @@ Advanced Excel functions: XLOOKUP, FILTER, MAPS.
 
 Main Question:
 
-**Do more skills get you better pay if I pursuing a career in the data field?**
+1️⃣ What are the top skills of data professionals?
 
 Secondary Questions:
 
-- What’s the median salary for data jobs in different regions?
+2️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
 
-- What are the top skills of data professionals?
+3️⃣ What skill should learn to get better pay?
 
-- What’s the pay for the top 10 skills?
+4️⃣ What’s the pay for the top 10 skills?
+
+5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
 
 ## **🔧 Tools Used**: 
 
