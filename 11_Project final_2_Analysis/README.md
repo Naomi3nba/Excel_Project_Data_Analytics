@@ -35,20 +35,22 @@ The data is from a Excel course from Luke Barousse, which provides a foundation 
 The dataset used for this project contains real-world data science job information from 2023 which provides a foundation for analyzing data using Excel. It includes detailed information on:
 
 👨‍💼 Job titles
+
 💰 Salaries
+
 📍 Country
+
 🛠️ Skills
 
-
-### 🧹 Clean data:
+## 🧹 Clean data:
 
 The data analysis process—starting with the very important step of data cleaning and data analize.
 
 For this project, the different formulas and funtions mentioned in detail below were applied using only Excel.
 
-#### 🧮 Formulas and Functions:
+### ➕ Formulas and Functions:  
 
-1. Funtion: Power Query (ETL)
+⭐ Funtion: Power Query (ETL)
 
 * Extract
 
@@ -70,13 +72,14 @@ For this project, the different formulas and funtions mentioned in detail below 
 
 ![transform data skills](https://github.com/user-attachments/assets/b86ee8a8-d76e-49cc-b0e3-250aebdd02db)
 
-2. Funtion: Power Pivot
+
+⭐ Funtion: Power Pivot
 
 I created a data model by integrating the *data_jobs_all* and *data_jobs_skills* tables into one model.
 
 Since I had already cleaned the data using Power Query; Power Pivot created a relationship between these two tables.
 
-Data Model
+Data Model:
 
 I created a relationship between my two tables using the job_id column.
 
@@ -85,19 +88,19 @@ I created a relationship between my two tables using the job_id column.
 ![model1 1](https://github.com/user-attachments/assets/12489892-df54-4a95-beb0-1e7d8e8b9899)
 
 
-### 📈 Analysis data
+## 📈 Analysis data
 
-#### 1️⃣ What are the top skills of data professionals?
+### 1️⃣ What are the top skills of data professionals?
 
-#### 2️⃣ What skill should learn to get better pay?
+### 2️⃣ What skill should learn to get better pay?
 
-1. Pivot Table and DAX    
+#### ➕ Formulas and Functions:  
+
+⭐ Funtion: Pivot Table and DAX  
 
 📊 I moved the *job_skills* to the rows area and *skill likelihood (%)* into the values area.
 
 🧮 Then I added new measures in DAX.
-
-##### 🧮 Formulas and Functions:
 
 - Name: Skill Count Dax
   
@@ -120,9 +123,9 @@ I created a relationship between my two tables using the job_id column.
 ```
 =DIVIDE([SKILL COUNT DAX],[JOB COUNT])
 ```
-##### 📊 Create Visualization:
+#### ✨ Create Visualization:
 
-1. Chart
+📊 Chart
 
 - Bar Chart for visual comparison of skills.
 - Horizontal bar chart for visual comparison of the skills likelihood (%) of each data job. 
@@ -131,22 +134,22 @@ I created a relationship between my two tables using the job_id column.
 
     ![question 2 chart](https://github.com/user-attachments/assets/325b5986-99f7-4182-961c-14b0dfbc9a61)
 
-## 🟢 Conclusion
+### 🟢 Conclusion
 
 Understanding prevalent skills in the industry not only helps professionals stay competitive but also guides training and educational programs to focus on the most impactful technologies. 
 
 If I want to work as a Data Analyst in Norway, I should focus on learning Python, Excel, SQL, Go, and Looker. In contrast, if I were seeking a similar role in Mexico, I would prioritize Excel, Tableau, Power BI, and SQL.
 
 
-#### 3️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
+### 3️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
 
-1. Pivot Table and DAX    
+#### ➕ Formulas and Functions:
+
+⭐ Funtion: Pivot Table and DAX    
 
 📊 I moved the *job_skills* to the rows area and *median salary,  into the values area.
 
 🧮 Then I added new measures in DAX.
-
-##### 🧮 Formulas and Functions:
 
 - Name: Median Salary
   
@@ -162,11 +165,11 @@ If I want to work as a Data Analyst in Norway, I should focus on learning Python
 =DIVIDE([SKILL COUNT DAX],[JOB COUNT])
 ```
 
-##### 📊 Create Visualization:
+#### ✨ Create Visualization:
 
-2. Chart
+📊 Chart
 
-    I used a chart X Y (Scatter) based on Median Salary ($) and the average skill request.
+- I used a chart X Y (Scatter) based on Median Salary ($) and the average skill request.
 
 ![question 1 chart](https://github.com/user-attachments/assets/49ea8e55-b25f-41cc-bcbc-6c0ceafc6efe)
 
@@ -178,25 +181,22 @@ There is a positive correlation between the number of skills requested in job po
 
 Roles that require fewer skills, like Business Analyst, tend to offer lower salaries, suggesting that more specialized skill sets command higher market value.
 
-#### 4️⃣ What’s the pay for the top 10 skills?
+### 4️⃣ What’s the pay for the top 10 skills?
 
-##### 🧮 Formulas and Functions:
+#### ➕ Formulas and Functions:
 
-1. Pivot Table and DAX
+⭐ Funtion: Pivot Table and DAX
 
-📊 I moved the *job_skills* to the rows area, *median salary* and *skill likelihood*, into the values area.
+📊 I moved the *job_skills* to the rows area, *median salary* and *skill likelihood*, into the values area. 
 
-##### 📊 Create Visualization:
+#### ✨ Create Visualization:
 
- 2. Chart
+📊 Chart
 
-    I used a chart combo:
-    
-    - Median Salary Skills --> Clustered Column
-      
-    - Skill Likelihood --> Line and Markers (Secundary Axis)
-   
-    - Slicer: Country and Job Title.
+- I used a chart combo
+- Median Salary Skills --> Clustered Column
+- Skill Likelihood --> Line and Markers (Secondary Axis)
+- Slicer: Country and Job Title.
 
   ![question 4chart](https://github.com/user-attachments/assets/26911268-5794-4f19-80a0-6a5b21b8b725)
 
@@ -208,26 +208,27 @@ Roles that require fewer skills, like Business Analyst, tend to offer lower sala
 
 This chart highlights the importance of investing time in learning high-value skills like Python and SQL, which are evidently tied to higher paying roles, especially for those looking to maximize their salary in the tech industry.
 
-#### 5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
 
-Funtion: PivotTables & DAX
+### 5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
 
-##### 🧮 Formulas and Functions:
+#### ➕ Formulas and Functions:
 
-🔢 I created a PivotTable using the Data Model I created with Power Pivot.
+⭐ Funtion: Pivot Table and DAX
 
 📊 I moved the job_title_short to the rows area and median salary, median salary USA, median salary non USA, into the values area.
 
 🧮 I added new measure to calculate the median salary for United States jobs and median salary non USA in DAX. 
 
-🧮 Added Slicer: Title Job, Country.
+- Name: Median salary USA
 
-Formula:  Median salary USA
+  Formula:  
 
 ```
 =CALCULATE([Median Salary],data_jobs_salary[job_country]="United States")
 ```
-Formula:  Median salary non USA
+- Name: Median salary non USA
+
+  Formula:
 
 ```
 =CALCULATE([Median Salary],data_jobs_salary[job_country]<>"United States")
@@ -243,9 +244,9 @@ Formula:  Median salary non USA
 
 These salary insights are important for planning and salary negotiations, helping professionals and companies align their offers with market standards while considering geographical variations.
 
-------------------------
 
-## 📌 Conclusion
+
+## 📌 Summary
 
 As a data enthusiast and former job seeker, I embarked on this Excel-based project to uncover valuable insights about the data science job market. Using a dataset I've curated from real-world job postings, I analyzed job titles, salaries, locations, and essential skills. By leveraging Excel features like Power Query, PivotTables, DAX, and charts, I discovered key correlations between multiple skills and higher salaries, particularly in Python, SQL, and cloud technologies. 
 
