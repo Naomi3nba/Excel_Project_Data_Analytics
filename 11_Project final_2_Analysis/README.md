@@ -87,15 +87,17 @@ I created a relationship between my two tables using the job_id column.
 
 ### 📈 Analysis data
 
-## 1️⃣ What are the top skills of data professionals?
+#### 1️⃣ What are the top skills of data professionals?
 
-## 2️⃣ What skill should learn to get better pay?
+#### 2️⃣ What skill should learn to get better pay?
 
 1. Pivot Table and DAX    
 
 📊 I moved the *job_skills* to the rows area and *skill likelihood (%)* into the values area.
 
 🧮 Then I added new measures in DAX.
+
+##### 🧮 Formulas and Functions:
 
 - Name: Skill Count Dax
   
@@ -118,7 +120,7 @@ I created a relationship between my two tables using the job_id column.
 ```
 =DIVIDE([SKILL COUNT DAX],[JOB COUNT])
 ```
-### 📊 Create Visualization:
+##### 📊 Create Visualization:
 
 1. Chart
 
@@ -136,13 +138,15 @@ Understanding prevalent skills in the industry not only helps professionals stay
 If I want to work as a Data Analyst in Norway, I should focus on learning Python, Excel, SQL, Go, and Looker. In contrast, if I were seeking a similar role in Mexico, I would prioritize Excel, Tableau, Power BI, and SQL.
 
 
-## 3️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
+#### 3️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
 
 1. Pivot Table and DAX    
 
 📊 I moved the *job_skills* to the rows area and *median salary,  into the values area.
 
 🧮 Then I added new measures in DAX.
+
+##### 🧮 Formulas and Functions:
 
 - Name: Median Salary
   
@@ -158,9 +162,9 @@ If I want to work as a Data Analyst in Norway, I should focus on learning Python
 =DIVIDE([SKILL COUNT DAX],[JOB COUNT])
 ```
 
-### 📊 Create Visualization:
+##### 📊 Create Visualization:
 
- 1. Chart
+2. Chart
 
     I used a chart X Y (Scatter) based on Median Salary ($) and the average skill request.
 
@@ -174,13 +178,15 @@ There is a positive correlation between the number of skills requested in job po
 
 Roles that require fewer skills, like Business Analyst, tend to offer lower salaries, suggesting that more specialized skill sets command higher market value.
 
-## 4️⃣ What’s the pay for the top 10 skills?
+#### 4️⃣ What’s the pay for the top 10 skills?
+
+##### 🧮 Formulas and Functions:
 
 1. Pivot Table and DAX
 
 📊 I moved the *job_skills* to the rows area, *median salary* and *skill likelihood*, into the values area.
 
-### 📊 Create Visualization:
+##### 📊 Create Visualization:
 
  2. Chart
 
@@ -202,15 +208,11 @@ Roles that require fewer skills, like Business Analyst, tend to offer lower sala
 
 This chart highlights the importance of investing time in learning high-value skills like Python and SQL, which are evidently tied to higher paying roles, especially for those looking to maximize their salary in the tech industry.
 
-
---------------------
-## 5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
-
-### 📈 Clean and Analysis data:
-
-#### 🧮 Formulas and Functions:
+#### 5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
 
 Funtion: PivotTables & DAX
+
+##### 🧮 Formulas and Functions:
 
 🔢 I created a PivotTable using the Data Model I created with Power Pivot.
 
@@ -241,18 +243,9 @@ Formula:  Median salary non USA
 
 These salary insights are important for planning and salary negotiations, helping professionals and companies align their offers with market standards while considering geographical variations.
 
------------------------------------------
+------------------------
 
-
-
-
-
- 
-
-
---------------------------------------
-
-## Conclusion
+## 📌 Conclusion
 
 As a data enthusiast and former job seeker, I embarked on this Excel-based project to uncover valuable insights about the data science job market. Using a dataset I've curated from real-world job postings, I analyzed job titles, salaries, locations, and essential skills. By leveraging Excel features like Power Query, PivotTables, DAX, and charts, I discovered key correlations between multiple skills and higher salaries, particularly in Python, SQL, and cloud technologies. 
 
