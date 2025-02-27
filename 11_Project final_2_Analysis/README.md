@@ -89,6 +89,8 @@ I created a relationship between my two tables using the job_id column.
 
 ## 1️⃣ What are the top skills of data professionals?
 
+## 2️⃣ What skill should learn to get better pay?
+
 1. Pivot Table and DAX    
 
 📊 I moved the *job_skills* to the rows area and *skill likelihood (%)* into the values area.
@@ -97,7 +99,7 @@ I created a relationship between my two tables using the job_id column.
 
 - Name: Skill Count Dax
   
-  Formula: 
+  Formula:
 ```
 =COUNT(data_jobs_skills[jobs_skills])
 
@@ -129,26 +131,33 @@ I created a relationship between my two tables using the job_id column.
 
 ## 🟢 Conclusion
 
-Understanding prevalent skills in the industry not only helps professionals stay competitive but also guides training and educational programs to focus on the most impactful technologies
+Understanding prevalent skills in the industry not only helps professionals stay competitive but also guides training and educational programs to focus on the most impactful technologies. 
+
+If I want to work as a Data Analyst in Norway, I should focus on learning Python, Excel, SQL, Go, and Looker. In contrast, if I were seeking a similar role in Mexico, I would prioritize Excel, Tableau, Power BI, and SQL.
 
 
+## 3️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
 
+1. Pivot Table and DAX    
 
----------
-2️⃣ Do more skills get you better pay, if I pursuing a career in data jobs?
+📊 I moved the *job_skills* to the rows area and *median salary,  into the values area.
 
+🧮 Then I added new measures in DAX.
 
+- Name: Median Salary
+  
+  Formula:
 
-
-
-
-
-
-Formula: Skill per Job
-
+```
+=MEDIAN(data_jobs_salary[salary_year_avg])
+```
+- Name: Skill per job
+  
+  Formula: 
 ```
 =DIVIDE([SKILL COUNT DAX],[JOB COUNT])
 ```
+
 ### 📊 Create Visualization:
 
  1. Chart
@@ -159,60 +168,43 @@ Formula: Skill per Job
 
 ## 🟢 Conclusion
 
+This trend emphasizes the value of acquiring multiple relevant skills, particularly for individuals aiming for higher-paying roles. 
+
 There is a positive correlation between the number of skills requested in job postings and the median salary, particularly in roles like Senior Data Engineer and Data Scientist. 
 
 Roles that require fewer skills, like Business Analyst, tend to offer lower salaries, suggesting that more specialized skill sets command higher market value.
 
+## 4️⃣ What’s the pay for the top 10 skills?
 
-## ➡️ What skill should learn to get better pay?
+1. Pivot Table and DAX
 
-#### 🧮 Formulas and Functions:
+📊 I moved the *job_skills* to the rows area, *median salary* and *skill likelihood*, into the values area.
 
-### 📈 Clean and Analysis data:
-
-1. Funtion: Power Pivot
-   
-- I created a data model by integrating the data_jobs_all and data_jobs_skills tables into one model.
-- Since I had already cleaned the data using Power Query; Power Pivot created a relationship between these two tables.
-- Data Model
-  I created a relationship between my two tables using the job_id column.
-  
-![model1](https://github.com/user-attachments/assets/baa68d0f-e6a9-4ba1-a638-a58e0a1e188b)
-
-![model1 1](https://github.com/user-attachments/assets/aa5c0dcc-8a39-4dcd-b743-6a84aa4a81c6)
-
-2. Pivot Table and DAX
-   
-🔢 I created a PivotTable using the Data Model I created with Power Pivot.
-
-📊 I moved the job_skills to the rows area and skill likelihood (%) into the values area.
-
-🧮 Then I added new measure to calculate the skill likelihood (%) in DAX.
-
-Formula: skill likelihood (%)
-
-```
-=DIVIDE([SKILL COUNT DAX],[JOB COUNT])
-```
 ### 📊 Create Visualization:
 
-1. Chart
+ 2. Chart
 
-- Bar Chart for visual comparison of skills.
-- Horizontal bar chart for visual comparison of the skills of each data job. 
-- Sorted skills by descending %.
-- Added Slices: Title job and country. 
-
+    I used a chart combo:
     
-![question 2 chart](https://github.com/user-attachments/assets/df51fcf1-e2a7-4088-b0d7-99f064540f62)
+    - Median Salary Skills --> Clustered Column
+      
+    - Skill Likelihood --> Line and Markers (Secundary Axis)
+   
+    - Slicer: Country and Job Title.
 
+  ![question 4chart](https://github.com/user-attachments/assets/26911268-5794-4f19-80a0-6a5b21b8b725)
 
 ## 🟢 Conclusion
+    
+💰 Higher median salaries are associated with skills like Python, Oracle, and SQL, suggesting their critical role in high-paying tech jobs.
 
-Understanding prevalent skills in the industry not only helps professionals stay competitive but also guides training and educational programs to focus on the most impactful technologies
+📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
+
+This chart highlights the importance of investing time in learning high-value skills like Python and SQL, which are evidently tied to higher paying roles, especially for those looking to maximize their salary in the tech industry.
 
 
-## ➡️ What’s the median salary for data jobs in different regions, compared to The United States?
+--------------------
+## 5️⃣ What’s the median salary for data jobs in different regions, compared to The United States?
 
 ### 📈 Clean and Analysis data:
 
