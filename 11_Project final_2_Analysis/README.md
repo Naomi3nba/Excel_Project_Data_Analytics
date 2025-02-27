@@ -196,7 +196,7 @@ Roles that require fewer skills, like Business Analyst, tend to offer lower sala
 
 ## 🟢 Conclusion
     
-💰 Higher median salaries are associated with skills like Python, Oracle, and SQL, suggesting their critical role in high-paying tech jobs.
+💰 Higher median salaries are associated with skills like Python, SQL, Excel suggesting their critical role in high-paying tech jobs.
 
 📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
 
